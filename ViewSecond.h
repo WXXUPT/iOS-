@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ViewSecond.h
 //  导航控制器基础
 //
 //  Created by 王旭 on 2020/7/15.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface ViewSecond : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
