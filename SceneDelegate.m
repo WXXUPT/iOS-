@@ -1,13 +1,13 @@
 //
 //  SceneDelegate.m
-//  导航控制器基础
+//  UITableView基础
 //
 //  Created by 王旭 on 2020/7/15.
 //  Copyright © 2020 王旭. All rights reserved.
 //
 
 #import "SceneDelegate.h"
-#import "VCRoot.h"
+
 @interface SceneDelegate ()
 
 @end
@@ -19,23 +19,6 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-    
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    VCRoot* root = [VCRoot new];
-//    //创建导航控制器,导航控制主要用来管理多个视图控制器的切换
-//    //层级的方式来管理多个视图控制器
-//    //创建控制器时，一定要一个根视图控制器
-//    //参数一：就是作为导航控制器的根视图控制器
-//    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:root];
-//    self.window.rootViewController = nav;
-//    [self.window makeKeyAndVisible];
-    _window = [[UIWindow alloc] initWithWindowScene:scene] ;
-    VCRoot *root = [[VCRoot alloc] init];
-    
-    //导航控制器 用来管理多个视图控制器的切换 层级的方式来管理多个视图控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:root];
-    _window.rootViewController = nav;
-    [_window makeKeyAndVisible];
 }
 
 
